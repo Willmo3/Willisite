@@ -720,3 +720,9 @@ video {
     padding-right: 10vw;
   }
 }
+
+@media (max-width: 768px) {
+  .mobile\:hidden {
+    display: none;
+  }
+}

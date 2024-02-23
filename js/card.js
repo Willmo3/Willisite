@@ -31,6 +31,7 @@ class Card {
     }
 }
 
+let active = null;
 
 
 
@@ -38,12 +39,27 @@ document.querySelectorAll('.card').forEach(element => {
     const card = new Card(element);
 
     element.addEventListener('mouseover', () => {
-        if (element.classList.contains('max-h-48')) {
+        if (active == null) {
+            active = card;
+            card.enable();
+        } else if (active != card) {
+            active.disable();
+            active = card;
             card.enable();
         }
     });
 
-    element.addEventListener('mouseout', () => {
-        card.disable();
+    element.addEventListener('click', () => {
+        if (active == null) {
+            active = card;
+            card.enable();
+        } else if (active != card) {
+            active.disable();
+            active = card;
+            card.enable();
+        } else {
+            active = null;
+            card.disable();
+        }
     });
 });

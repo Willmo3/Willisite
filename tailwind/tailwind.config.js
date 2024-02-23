@@ -13,6 +13,9 @@ module.exports = {
         'btn-width-xl': '80vw',
         'par-margin': '1.25rem',
       },
+      screens: {
+        'mobile': {'max': '768px'}
+      },
     },
   },
   plugins: [],
