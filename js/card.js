@@ -1,9 +1,9 @@
 class Card {
     constructor(element) {
         this.element = element;
-        this.img = element.getElementsByTagName('img')[0];
+        this.img = element.getElementsByClassName('pic')[0];
         this.content = element.getElementsByClassName('content')[0];
-        this.header = element.getElementsByTagName('h1')[0];
+        this.header = element.getElementsByClassName('title')[0];
     }
 
     enable() {

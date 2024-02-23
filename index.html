@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/png" href="img/profile.png"/>
     <link rel="stylesheet" href="style/tailwind.css">
+    <link rel="stylesheet" href="style/filter.css">
     <script defer type="text/javascript" src="js/card.js"></script>
     <title>Willisite</title>
 </head>
@@ -25,10 +26,14 @@
 
     <!-- Card -->
     <div class="px-std-margin lg:px-lrg-margin flex justify-between flex-wrap">
-
+<!-- TODO: More generic w/ classes -- pic, header -->
+<!-- TODO: Chevron in header div -->
         <div class="card max-h-48 mb-10">
-            <h1 class="h-14 text-lg text-white bg-lime-600 px-par-margin flex items-center transition-all">About Me</h1>
-            <img class="max-h-0 transition-all" src="img/will.jpg">
+            <div class="title h-14 text-lg text-white bg-lime-600 px-par-margin flex items-center justify-between transition-all">
+                <h1>About Me</h1>
+                <img class="h-1/2 filter-white" src="img/chevron-down.svg">
+            </div>
+            <img class="pic max-h-0 transition-all" src="img/will.jpg">
             <div class="content mt-par-margin lg:w-80 max-h-32 overflow-hidden transition-all">
                 <p class="ml-par-margin mb-par-margin">Hello! I'm Will Morris, a CS student at James Madison University.</p>
                 <p class="ml-par-margin mb-par-margin">I enjoy the finer things in life, like Minecraft, Freeciv, and Legos.</p>
