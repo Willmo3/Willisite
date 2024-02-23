@@ -33,8 +33,6 @@ class Card {
 
 let active = null;
 
-
-
 document.querySelectorAll('.card').forEach(element => {
     const card = new Card(element);
 
@@ -50,16 +48,13 @@ document.querySelectorAll('.card').forEach(element => {
     });
 
     element.addEventListener('click', () => {
-        if (active == null) {
+        if (active === null) {
             active = card;
             card.enable();
         } else if (active != card) {
             active.disable();
             active = card;
             card.enable();
-        } else {
-            active = null;
-            card.disable();
         }
     });
 });
