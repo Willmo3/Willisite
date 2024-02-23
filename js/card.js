@@ -13,13 +13,13 @@ class Card {
     enable() {
         this.chevron.src = 'img/chevron-up.svg';
 
-        this.img.classList.remove('max-h-0');
+        this.img.classList.remove('w-0');
         this.text.classList.remove('max-h-32');
         this.element.classList.remove('max-h-48');
         this.header.classList.remove('h-14');
 
         this.img.classList.add('m-5');
-        this.img.classList.add('max-h-48');
+        this.img.classList.add('w-48');
         this.text.classList.add('max-h-72');
         this.header.classList.add('h-20');
     }
@@ -28,11 +28,11 @@ class Card {
         this.chevron.src = 'img/chevron-down.svg';
 
         this.img.classList.remove('m-5');
-        this.img.classList.remove('max-h-48');
+        this.img.classList.remove('w-48');
         this.text.classList.remove('max-h-72');
         this.header.classList.remove('h-20');
 
-        this.img.classList.add('max-h-0');
+        this.img.classList.add('w-0');
         this.text.classList.add('max-h-32');
         this.element.classList.add('max-h-48');
         this.header.classList.add('h-14');
