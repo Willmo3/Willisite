@@ -31,9 +31,9 @@
         </nav>
     </header>
     <h1 class="px-std-margin lg:px-lrg-margin my-10 text-3xl font-mono text-green-600">Welcome to Willmo3's Website!</h1>
-
-    <!-- Card -->
+    <!-- Cards -->
     <div class="px-std-margin lg:px-lrg-margin flex justify-between flex-wrap">
+        <!-- Whoami -->
         <div class="card max-h-48 mb-10">
             <div class="title h-14 text-lg text-white bg-lime-600 px-par-margin flex items-center justify-between transition-all">
                 <h1>About Me</h1>
@@ -42,14 +42,29 @@
                 </button>
             </div>
             <div class="content">
-                <img class="pic w-0 transition-all" src="img/will.jpg">
+                <img class="pic w-0 object-scale-down transition-all" src="img/will.jpg">
                 <div class="text text-gray-600 mt-par-margin lg:w-80 max-h-32 overflow-hidden transition-all">
                     <p class="ml-par-margin mb-par-margin">Hello! I'm Will Morris, a CS student at James Madison University.</p>
                     <p class="ml-par-margin mb-par-margin">I enjoy the finer things in life, like Minecraft, Freeciv, and Legos.</p>
                     <p class="ml-par-margin mb-par-margin">My research interests include programming languages, information theory, and high performance computing.</p>
                 </div>
             </div>
-            <!-- Whoami -->
+        </div>
+        <!-- WillZio -->
+        <div class="card max-h-48 mb-10">
+            <div class="title h-14 text-lg text-white bg-lime-600 px-par-margin flex items-center justify-between transition-all">
+                <h1>WillZip</h1>
+                <button class="h-full">
+                    <img class="h-1/2 filter-white" src="img/chevron-down.svg">
+                </button>
+            </div>
+            <div class="content">
+                <img class="pic w-0 object-scale-down transition-all" src="img/huffman.png">
+                <div class="text text-gray-600 mt-par-margin lg:w-80 max-h-32 overflow-hidden transition-all">
+                    <p class="ml-par-margin mb-par-margin">Over winter break, I built a Huffman compressor in Rust.</p>
+                    <p class="ml-par-margin mb-par-margin font-mono font-bold text-lime-600"><a href="https://github.com/Willmo3/will_zip" target="_blank">See on GitHub!</a></p>
+                </div>
+            </div>
         </div>
     </div>
 </body>
