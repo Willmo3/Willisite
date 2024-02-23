@@ -4,9 +4,12 @@ class Card {
         this.img = element.getElementsByClassName('pic')[0];
         this.content = element.getElementsByClassName('content')[0];
         this.header = element.getElementsByClassName('title')[0];
+        this.chevron = this.header.getElementsByTagName('img')[0];
     }
 
     enable() {
+        this.chevron.src = 'img/chevron-up.svg';
+
         this.img.classList.remove('max-h-0');
         this.content.classList.remove('max-h-32');
         this.element.classList.remove('max-h-48');
@@ -19,6 +22,8 @@ class Card {
     }
 
     disable() {
+        this.chevron.src = 'img/chevron-down.svg';
+
         this.img.classList.remove('m-5');
         this.img.classList.remove('max-h-48');
         this.content.classList.remove('max-h-72');
