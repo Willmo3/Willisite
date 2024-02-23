@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style/tailwind.css">
     <link rel="stylesheet" href="style/filter.css">
     <script defer type="text/javascript" src="js/card.js"></script>
+    <script defer type="text/javascript" src="js/nav.js"></script>
     <title>Willisite</title>
 </head>
 <body class="font-sans">
@@ -16,6 +17,9 @@
             <img class="h-2/3 mr-2" src="img/profile.png">
             <a class="text-3xl hover:text-lime-500 transition-colors" href="index.html">Williserver</a>
         </div>
+        <button id="dropdown" class="flex items-center">
+            <img src="img/hamburger.svg" class="h-12 filter-white lg:hidden">
+        </button>
         <ul class="w-2/3 flex justify-end mobile:hidden">
             <li class="px-2 text-xl flex items-center justify-center hover:text-lime-500 transition-colors"><a href="http://williserver.net" target="_blank">💎 Minecraft</a></li>
             <li class="px-2 text-xl flex items-center justify-center hover:text-lime-500 transition-colors"><a href="https://github.com/Beeciv" target="_blank">🌐 Freeciv</a></li>
@@ -29,7 +33,9 @@
         <div class="card max-h-48 mb-10">
             <div class="title h-14 text-lg text-white bg-lime-600 px-par-margin flex items-center justify-between transition-all">
                 <h1>About Me</h1>
-                <img class="h-1/2 filter-white" src="img/chevron-down.svg">
+                <button class="h-full">
+                    <img class="h-1/2 filter-white" src="img/chevron-down.svg">
+                </button>
             </div>
             <div class="content">
                 <img class="pic max-h-0 transition-all" src="img/will.jpg">
