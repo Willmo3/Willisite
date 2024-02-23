@@ -37,11 +37,7 @@ document.querySelectorAll('.card').forEach(element => {
     const card = new Card(element);
 
     element.addEventListener('mouseover', () => {
-        if (active == null) {
-            active = card;
-            card.enable();
-        } else if (active != card) {
-            active.disable();
+        if (active === null) {
             active = card;
             card.enable();
         }
