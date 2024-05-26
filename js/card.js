@@ -25,6 +25,7 @@ class Card {
         this.img.classList.add(img_margin);
         this.img.classList.add(img_width);
         this.img.classList.add(img_height);
+        this.img.alt = "up chevron"
 
         this.header.classList.add('h-20');
     }
@@ -40,6 +41,8 @@ class Card {
 
         this.img.classList.add(no_width);
         this.img.classList.add(no_height);
+        this.img.alt = "down chevron"
+
         this.header.classList.add('h-14');
     }
 }
@@ -53,7 +56,7 @@ document.querySelectorAll('.card').forEach(element => {
         if (active === null) {
             active = card;
             card.enable();
-        } else if (active != card) {
+        } else if (active !== card) {
             active.disable();
             active = card;
             card.enable();
