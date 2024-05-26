@@ -2,7 +2,6 @@ let toggled = false;
 const dropdown = document.getElementById("dropdown");
 const img = dropdown.getElementsByTagName('img')[0];
 const nav = document.getElementsByTagName('nav')[0];
-const lis = nav.getElementsByTagName('ul')[0].children;
 
 dropdown.addEventListener('click', () => {
     toggled = !toggled;
