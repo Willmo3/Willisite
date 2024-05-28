@@ -3,6 +3,8 @@ module.exports = {
   content: [
     "../index.html",
     "../mc/index.html",
+    "../blog/index.html",
+    "../blog/reuse/*.html",
     "../js/*",
   ],
   theme: {

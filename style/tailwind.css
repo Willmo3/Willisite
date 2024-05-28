@@ -742,6 +742,10 @@ video {
   padding-right: 5vw;
 }
 
+.pl-par-margin {
+  padding-left: 1.25rem;
+}
+
 .pl-std-margin {
   padding-left: 5vw;
 }

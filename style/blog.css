@@ -1,0 +1,17 @@
+p {
+    margin-bottom: 0.5em;
+    font-size: large;
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+h1, h2 {
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    height:36px;
+    color: rgb(22 101 52);
+    font-weight: bold;
+    font-size: x-large;
+}
