@@ -12,4 +12,7 @@
   .card {
     @apply w-full lg:w-auto mb-10
   }
+  .info {
+    @apply ml-par-margin mb-par-margin
+  }
 }
