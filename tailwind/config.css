@@ -15,4 +15,7 @@
   .info {
     @apply ml-par-margin mb-par-margin
   }
+  .link {
+    @apply font-mono font-bold text-lime-700
+  }
 }
