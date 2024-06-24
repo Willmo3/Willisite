@@ -10,7 +10,7 @@ class Card {
     constructor(element) {
         this.element = element;
         this.header = element.getElementsByClassName('title')[0];
-        this.img = element.getElementsByClassName('pic')[0];
+        this.img = element.getElementsByClassName('scaled_img')[0];
         this.chevron = this.header.getElementsByTagName('img')[0];
     }
 
