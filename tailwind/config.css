@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .card_button {
+    @apply w-full h-14 text-lg text-white bg-lime-700 px-par-margin flex items-center justify-between transition-all
+  }
+}
