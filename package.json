@@ -1,0 +1,19 @@
+{
+  "name": "willisite",
+  "version": "1.0.0",
+  "description": "Willmo3's website",
+  "main": "index.html",
+  "scripts": {
+    "tw": "cd tailwind && npx tailwind -i config.css -o ../style/tailwind.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Willmo3/Willisite.git"
+  },
+  "author": "Will Morris",
+  "license": "MIT",
+  "homepage": "https://github.com/Willmo3/Willisite#readme",
+  "dependencies": {
+    "tailwindcss": "^3.4.4"
+  }
+}
