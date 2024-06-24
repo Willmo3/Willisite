@@ -4,7 +4,7 @@
   "description": "Willmo3's website",
   "main": "index.html",
   "scripts": {
-    "tw": "cd tailwind && npx tailwind -i config.css -o ../style/tailwind.css"
+    "setup": "cd tailwind && npx tailwind -i config.css -o ../style/tailwind.css"
   },
   "repository": {
     "type": "git",
