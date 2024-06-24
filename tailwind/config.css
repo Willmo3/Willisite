@@ -29,4 +29,7 @@
   .topbar_container {
     @apply px-std-margin lg:px-lrg-margin h-full flex justify-between items-center
   }
+  .topbar_logo {
+    @apply h-full w-1/3 flex justify-start items-center
+  }
 }
