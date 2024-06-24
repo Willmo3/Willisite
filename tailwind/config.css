@@ -19,6 +19,9 @@
   .link {
     @apply font-mono font-bold text-lime-700
   }
+  .scaled_img {
+    @apply object-scale-down transition-all
+  }
 
   /* Global topbar classes */
   .topbar_header {
