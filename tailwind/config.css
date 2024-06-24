@@ -26,4 +26,7 @@
   .topbar_header {
     @apply z-50 sticky top-0 h-16 md:flex md:justify-between bg-green-800 text-white
   }
+  .topbar_container {
+    @apply px-std-margin lg:px-lrg-margin h-full flex justify-between items-center
+  }
 }
