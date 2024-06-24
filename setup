@@ -1,6 +1,0 @@
-#!/usr/bin/env bash
-
-cd tailwind
-./tailwind -i config.css -o ../style/tailwind.css
-cd ..
-
