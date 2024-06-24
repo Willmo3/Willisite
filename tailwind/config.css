@@ -6,9 +6,6 @@
   .card_button {
     @apply w-full h-14 text-lg text-white bg-lime-700 px-par-margin flex items-center justify-between transition-all
   }
-  .nav_item {
-    @apply px-2 mobile:px-std-margin text-xl mobile:w-full mobile:bg-gray-600 mobile:h-1/3 flex items-center justify-center mobile:justify-start hover:text-gray-700 transition-colors
-  }
   .card {
     @apply w-full lg:w-auto mb-10
   }
@@ -37,5 +34,8 @@
   }
   .topbar_nav {
     @apply w-2/3 md:px-std-margin lg:px-lrg-margin mobile:w-full flex justify-end mobile:h-0 mobile:opacity-0 transition-all
+  }
+  .topbar_nav_item {
+    @apply px-2 mobile:px-std-margin text-xl mobile:w-full mobile:bg-gray-600 mobile:h-1/3 flex items-center justify-center mobile:justify-start hover:text-gray-700 transition-colors
   }
 }
