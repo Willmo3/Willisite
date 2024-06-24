@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @layer components {
+  /* Card content classes */
   .card_button {
     @apply w-full h-14 text-lg text-white bg-lime-700 px-par-margin flex items-center justify-between transition-all
   }
@@ -19,7 +20,7 @@
     @apply font-mono font-bold text-lime-700
   }
 
-/*  Global topbar classes */
+  /* Global topbar classes */
   .topbar_header {
     @apply z-50 sticky top-0 h-16 md:flex md:justify-between bg-green-800 text-white
   }
@@ -37,5 +38,10 @@
   }
   .topbar_nav_item {
     @apply px-2 mobile:px-std-margin text-xl mobile:w-full mobile:bg-gray-600 mobile:h-1/3 flex items-center justify-center mobile:justify-start hover:text-gray-700 transition-colors
+  }
+
+  /* Global heading classes */
+  .header_info {
+    @apply px-std-margin lg:px-lrg-margin my-10 text-3xl font-mono text-gray-700
   }
 }
