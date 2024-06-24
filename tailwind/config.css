@@ -35,4 +35,7 @@
   .topbar_logo_link {
     @apply text-3xl hover:text-gray-700 transition-colors
   }
+  .topbar_nav {
+    @apply w-2/3 md:px-std-margin lg:px-lrg-margin mobile:w-full flex justify-end mobile:h-0 mobile:opacity-0 transition-all
+  }
 }
