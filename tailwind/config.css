@@ -12,6 +12,9 @@
   .card {
     @apply w-full lg:w-auto mb-10
   }
+  .card_content {
+    @apply text-gray-700 mt-par-margin lg:w-80 transition-all
+  }
   .info {
     @apply ml-par-margin mb-par-margin
   }
