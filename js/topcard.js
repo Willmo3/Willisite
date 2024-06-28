@@ -1,19 +1,8 @@
-
-// TODO: parameterize in subclasses
-// Look into js inheritance
-const img_width = 'w-72';
-const img_height = 'h-48';
-const img_margin = 'm-4';
-
-const no_width = 'w-0';
-const no_height = 'h-0';
-
-
-class Card {
+class TopCard {
     constructor(element) {
         this.element = element;
         this.header = element.getElementsByClassName('title')[0];
-        this.img = element.getElementsByClassName('scaled_img')[0];
+        this.img = element.querySelectorAll('scaled_img')[0];
         this.chevron = this.header.getElementsByTagName('img')[0];
     }
 
@@ -60,23 +49,3 @@ class Card {
         }
     }
 }
-
-let active = null;
-
-document.querySelectorAll('.card').forEach(element => {
-    const card = new Card(element);
-
-    card.header.addEventListener('click', () => {
-        if (active === null) {
-            active = card;
-            card.enable();
-        } else if (active !== card) {
-            active.disable();
-            active = card;
-            card.enable();
-        } else {
-            card.disable();
-            active = null;
-        }
-    });
-});

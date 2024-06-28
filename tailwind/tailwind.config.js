@@ -12,6 +12,7 @@ module.exports = {
       spacing: {
         'std-margin': '5vw',
         'lrg-margin': '10vw',
+        '2xl-margin': '25vw',
         'btn-width': '90vw',
         'btn-width-xl': '80vw',
         'par-margin': '1.25rem',

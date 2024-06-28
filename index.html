@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style/tailwind.css">
     <link rel="stylesheet" href="style/filter.css">
     <script defer type="text/javascript" src="js/card.js"></script>
+    <script defer type="text/javascript" src="js/top-card.js"></script>
     <script defer type="text/javascript" src="js/nav.js"></script>
     <title>Willisite</title>
 </head>
@@ -35,21 +36,26 @@
     </header>
     <main>
         <h1 class="header_info">Welcome to Willmo3's Website!</h1>
+
+        <!-- Whoami -->
+        <!-- Card on mobile -->
+        <section aria="about-me" class="top-card md:px-std-margin lg:px-lrg-margin 2xl:px-2xl-margin md:flex md:justify-between md:mb-10 md:gap-20">
+            <button aria="Show Minecraft" class="title mobile:card_button md:hidden">
+                <h1>👓 About Me</h1>
+                <img class="h-1/2 filter-white" src="img/chevron-down.svg" alt="down chevron">
+            </button>
+            <div>
+                <h1 class="mobile:hidden text-3xl card_button mb-5 md:mb-10 w-full">👓 About Me</h1>
+                <p class="info">Hello! I'm Will Morris, a CS student at James Madison University.</p>
+                <p class="info">I enjoy the finer things in life, like Minecraft, Freeciv, and Legos.</p>
+                <p class="info">My research interests include programming languages, information theory, and high
+                    performance computing.</p>
+            </div>
+            <img class="scaled_img w-0 md:w-80" src="img/will.jpg" alt="picture of me!">
+        </section>
+
         <!-- Cards -->
-        <div class="w-full px-std-margin lg:px-lrg-margin flex justify-between flex-wrap">
-            <!-- Whoami -->
-            <section aria="about me" class="card">
-                <button aria="show about me" class="title card_button">
-                    <h1>👓 About Me</h1>
-                    <img class="h-1/2 filter-white" src="img/chevron-down.svg" alt="down chevron">
-                </button>
-                <img class="scaled_img w-0" src="img/will.jpg" alt="picture of me!">
-                <div class="card_content">
-                    <p class="info">Hello! I'm Will Morris, a CS student at James Madison University.</p>
-                    <p class="info">I enjoy the finer things in life, like Minecraft, Freeciv, and Legos.</p>
-                    <p class="info">My research interests include programming languages, information theory, and high performance computing.</p>
-                </div>
-            </section>
+        <div class="w-full px-std-margin lg:px-lrg-margin 2xl:px-2xl-margin flex justify-between flex-wrap gap-10">
             <!-- MC -->
             <section aria="minecraft contributions" class="card">
                 <button aria="Show Minecraft" class="title card_button">
