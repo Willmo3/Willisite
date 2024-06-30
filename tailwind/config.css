@@ -29,6 +29,9 @@
   }
 
   /* Card content classes */
+  .card_section {
+    @apply w-full px-std-margin lg:px-lrg-margin 2xl:px-2xl-margin flex justify-between flex-wrap gap-10
+  }
   .card_button {
     @apply w-full h-14 text-lg text-white bg-lime-700 px-par-margin flex items-center justify-between transition-all
   }
