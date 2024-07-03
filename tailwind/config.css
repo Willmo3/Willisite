@@ -36,7 +36,7 @@
     @apply w-full h-14 text-lg text-white bg-lime-700 px-par-margin flex items-center justify-between transition-all
   }
   .card {
-    @apply w-full lg:w-auto mb-10
+    @apply w-full lg:w-auto md:mb-10
   }
   .card_content {
     @apply text-gray-700 mt-par-margin lg:w-80 transition-all
