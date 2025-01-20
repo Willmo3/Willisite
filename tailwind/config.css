@@ -11,13 +11,13 @@
     @apply h-full flex justify-between items-center gap-10 px-std-margin lg:px-0
   }
   .topbar_logo {
-    @apply h-full flex md:pl-std-margin lg:pl-lrg-margin 2xl:pl-2xl-margin justify-start items-center
+    @apply h-full flex md:pl-std-margin lg:pl-lrg-margin 2xl:pl-[calc(20vw)] justify-start items-center
   }
   .topbar_logo_link {
     @apply text-3xl hover:text-gray-700 transition-colors
   }
   .topbar_nav {
-    @apply lg:pr-lrg-margin 2xl:pr-2xl-margin flex justify-end transition-all w-full lg:w-2/3
+    @apply lg:pr-lrg-margin 2xl:pr-[calc(20vw)] flex justify-end transition-all w-full lg:w-2/3
   }
   .topbar_nav_item {
     @apply px-std-margin lg:px-2 text-xl bg-gray-600 h-1/3 lg:h-full w-full lg:w-auto flex items-center justify-start hover:text-gray-700 lg:bg-transparent transition-colors
@@ -25,12 +25,12 @@
 
   /* Global heading classes */
   .header_info {
-    @apply px-std-margin lg:px-lrg-margin 2xl:px-2xl-margin my-10 text-3xl font-mono text-gray-700
+    @apply px-std-margin lg:px-lrg-margin 2xl:px-[calc(20vw)] my-10 text-3xl font-mono text-gray-700
   }
 
   /* Card content classes */
   .card_section {
-    @apply w-full px-std-margin lg:px-lrg-margin 2xl:px-2xl-margin flex justify-between flex-wrap gap-10
+    @apply w-full px-std-margin lg:px-lrg-margin 2xl:px-[calc(20vw)] flex justify-between flex-wrap gap-10
   }
   .card_button {
     @apply w-full h-14 text-lg text-white bg-lime-700 px-par-margin flex items-center justify-between transition-all
