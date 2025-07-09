@@ -42,20 +42,31 @@
             <img class="md:w-[calc(250px)] lg:w-[calc(300px)] object-cover mb-12 md:mb-0" src="img/will.jpg" alt="picture of me!">
             <div>
                 <h1 class="text-3xl card_button mb-5 md:mb-10 w-full">👓 About Me</h1>
-                <p class="info">Hello! I'm Will Morris, a CS student at James Madison University.</p>
-                <p class="info">I enjoy the finer things in life, like Minecraft, Freeciv, and Legos.</p>
-                <p class="info">My high level research objective is to design programming tools that abstract the complexity of computer systems and enable developers to write high-performance code.
-                    To this end, I seek to design new parallel programming languages, compiler analyses, and verification techniques that
-                    detect race conditions or even automatically parallelize code!</p>
-                <p class="info">Previously, I was a member of Carnegie Mellon University's REUSE program, where I designed
-                    new tools to enable software robustness analysis in the TLA+ specification language. Now I'm applying for Ph.D. programs in computer science.</p>
+                <p class="info">Hello! I'm Will Morris, a recent graduate of James Madison University and incoming CS Ph.D. student at Georgia Tech under Dr. Jacob Laurel.</p>
+                <p class="info">My research interest centers on applied programming language design for developer productivity. Using novel optimizations and verification techniques, how can we enable developers to write correct high-performance code without being bogged down by low-level details?</p>
+                <p class="info">I'm particularly interested in the evolution of parallel and distributed languages. <a class="link" href="https://dl.acm.org/doi/abs/10.1145/1238844.1238851">"The Rise and Fall of High Performance Fortran" is one of my favorite papers!</a></p>
+                <p class="info">Outside of work, I enjoy the finer things in life, like Minecraft, Freeciv, and Legos. I also like to touch grass with walks and hikes!</p>
             </div>
         </section>
 
-        <h1 class="header_info">Research</h1>
+        <h1 class="header_info">Past Research</h1>
 
         <!-- Research Cards -->
         <section aria="research" class="card_section">
+            <!-- robustness -->
+            <section aria="software robustness" class="card">
+                <button aria="show software robustness" class="title card_button">
+                    <h1>💪 Software Robustness</h1>
+                    <img class="h-1/2 filter-white" src="img/chevron-down.svg" alt="down chevron">
+                </button>
+                <img class="scaled_img w-0" src="img/statemachine.png" alt="An example state machine, similar to the LTSes used in my robustness research.">
+                <div class="card_content">
+                    <p class="info">While at the REUSE program in CMU's SoDA lab, I formalized and prototyped software robustness analysis in the TLA+ modeling language. </p>
+                    <p class="info link"><a href="https://github.com/Willmo3/RobustNet" target="_blank">RobustNet, a library for modelling networks in TLA+</a></p>
+                    <p class="info link"><a href="https://github.com/Willmo3/FaultCrosser" target="_blank">FaultCrosser, a tool for robustness analysis in TLA+</a></p>
+                </div>
+            </section>
+
             <!-- Twoville -->
             <section aria="twoville" class="card">
                 <button aria="show twoville" class="title card_button">
@@ -65,22 +76,8 @@
                 <img class="scaled_img w-0" src="img/twoville.jpg" alt="Chris Johnson helps students at James Madison University's summer refugee camp.">
                 <div class="card_content">
                     <p class="info">Dr. Chris Johnson's Twoville is an educational programming system for generating and visualizing SVG shapes!</p>
-                    <p class="info">I examine avenues for performance improvements in Twoville, like upgrading its interpreter and web runtime, with a specific interest in Rust WebAssembly.</p>
+                    <p class="info">I examined avenues for performance improvements in Twoville, like upgrading its interpreter and web runtime, with a specific interest in Rust WebAssembly.</p>
                     <p class="info link"><a href="https://twoville.org" target="_blank">Check out Twoville now!</a></p>
-                </div>
-            </section>
-
-            <!-- robustness -->
-            <section aria="software robustness" class="card">
-                <button aria="show software robustness" class="title card_button">
-                    <h1>💪 Software Robustness</h1>
-                    <img class="h-1/2 filter-white" src="img/chevron-down.svg" alt="down chevron">
-                </button>
-                <img class="scaled_img w-0" src="img/statemachine.png" alt="An example state machine, similar to the LTSes used in my robustness research.">
-                <div class="card_content">
-                    <p class="info">At CMU's SoDA lab, I formalized and prototyped software robustness analysis in the TLA+ modeling language. </p>
-                    <p class="info link"><a href="https://github.com/Willmo3/RobustNet" target="_blank">RobustNet, a library for modelling networks in TLA+</a></p>
-                    <p class="info link"><a href="https://github.com/Willmo3/FaultCrosser" target="_blank">FaultCrosser, a tool for robustness analysis in TLA+</a></p>
                 </div>
             </section>
 
